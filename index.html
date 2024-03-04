@@ -381,6 +381,10 @@
       
             <!-- Total price -->
             <p>Total Price: $<span id="totalPrice">0.00</span></p>
+      
+            <!-- Checkout button -->
+            <button id="checkoutButton" onclick="checkout()">CHECKOUT</button>
+          </div>
           </div>
       </div>
     </div>
@@ -426,6 +430,12 @@
       var currentTotal = parseFloat(totalPriceElement.textContent);
       var newTotal = currentTotal + amount;
       totalPriceElement.textContent = newTotal.toFixed(2);
+    }
+
+    // JavaScript function to simulate a checkout (redirect to payment page)
+    function checkout() {
+      // You can replace this URL with the actual URL of your payment page
+      window.location.href = "https://yourpaymentpage.com";
     }
     
     </script>
