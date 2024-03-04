@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart Button</title>
+  <style>
+    /* Add any additional styles you want here */
+  </style>
+</head>
+<body>
+
+  <!-- Your content goes here -->
+  <h1>Product Name</h1>
+  <p>Product description and details.</p>
+
+  <!-- Add to Cart button -->
+  <button id="addToCartBtn" onclick="addToCart()">Add to Cart</button>
+
+  <!-- Cart content display -->
+  <div id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cartItems">
+      <!-- Cart items will be displayed here -->
+    </ul>
+  </div>
+
+  <script>
+    // JavaScript function to add item to the cart
+    function addToCart() {
+      // You can customize this function to add specific product details
+      var productName = "Product Name";
+      var productPrice = 19.99;
+
+      // Create a new list item for the cart
+      var cartItem = document.createElement("li");
+      cartItem.textContent = productName + " - $" + productPrice.toFixed(2);
+
+      // Add a "Remove" button for each cart item
+      var removeBtn = document.createElement("button");
+      removeBtn.textContent = "Remove";
+      removeBtn.onclick = function() {
+        removeFromCart(cartItem);
+      };
+
+      // Append the "Remove" button to the cart item
+      cartItem.appendChild(removeBtn);
+
+      // Append the item to the cart
+      document.getElementById("cartItems").appendChild(cartItem);
+    }
+
+    // JavaScript function to remove item from the cart
+    function removeFromCart(cartItem) {
+      // Remove the clicked cart item from the cart
+      document.getElementById("cartItems").removeChild(cartItem);
+    }
+  </script>
+
+</body>
+</html>
+

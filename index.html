@@ -14,6 +14,21 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
     />
+    <style>
+      /* Add your existing styles here */
+  
+      /* Add hover effect for the "ADD TO BAG" buttons */
+      .add-to-bag1:hover {
+        background-color: #dddddd00;
+        cursor: pointer;
+      }
+  
+      /* Style for the "Remove" button in the cart */
+      .remove-item {
+        color: red;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="storepage">
@@ -38,9 +53,9 @@
             src="./public/content-image@2x.png"
           />
 
-          <div class="add-to-bag">
-            <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+        <div class="add-to-bag">
+          <div class="add-to-bag-child"></div>
+          <div class="add-to-bag1" onclick="addToCart('Sweater 1', 100.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon19">
@@ -53,7 +68,7 @@
 
           <div class="add-to-bag">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweater 2', 100.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon20">
@@ -66,7 +81,7 @@
 
           <div class="add-to-bag4">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweater 3', 100.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon21">
@@ -79,7 +94,7 @@
 
           <div class="add-to-bag4">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweater 4', 100.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon22">
@@ -92,7 +107,7 @@
 
           <div class="add-to-bag8">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweater 5', 100.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon23">
@@ -105,7 +120,7 @@
 
           <div class="add-to-bag8">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweater 6', 100.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="description">
@@ -147,7 +162,7 @@
 
           <div class="add-to-bag">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweatpants 1', 60.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon19">
@@ -160,7 +175,7 @@
 
           <div class="add-to-bag14">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweatpants 2', 60.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon20">
@@ -173,7 +188,7 @@
 
           <div class="add-to-bag16">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweatpants 3', 60.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon21">
@@ -186,7 +201,7 @@
 
           <div class="add-to-bag14">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweatpants 4', 60.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon22">
@@ -199,7 +214,7 @@
 
           <div class="add-to-bag20">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweatpants 5', 60.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon23">
@@ -212,7 +227,7 @@
 
           <div class="add-to-bag20">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Sweatpants 6', 60.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="description">
@@ -254,7 +269,7 @@
 
           <div class="add-to-bag24">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Beanie 1', 25.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon31">
@@ -267,7 +282,7 @@
 
           <div class="add-to-bag26">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Beanie 2', 25.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon32">
@@ -280,7 +295,7 @@
 
           <div class="add-to-bag26">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Beanie 3', 25.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon21">
@@ -293,7 +308,7 @@
 
           <div class="add-to-bag24">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Beanie 4', 25.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon22">
@@ -306,7 +321,7 @@
 
           <div class="add-to-bag24">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Beanie 5', 25.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="shopping-icon23">
@@ -319,7 +334,7 @@
 
           <div class="add-to-bag24">
             <div class="add-to-bag-child"></div>
-            <div class="add-to-bag1">ADD TO BAG</div>
+            <div class="add-to-bag1" onclick="addToCart('Beanie 6', 25.00)">ADD TO BAG</div>
           </div>
         </div>
         <div class="description">
@@ -357,98 +372,63 @@
         />
 
         <div class="cart1">
-          <div class="invb"></div>
-          <div class="cart2">Cart</div>
-          <div class="invico">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb@2x.png" />
+          
+          <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems">
+              <!-- Cart items will be displayed here -->
+            </ul>
+      
+            <!-- Total price -->
+            <p>Total Price: $<span id="totalPrice">0.00</span></p>
           </div>
-          <div class="invico1">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-9@2x.png" />
-          </div>
-          <div class="invico2">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-1@2x.png" />
-          </div>
-          <div class="invico3">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-10@2x.png" />
-          </div>
-          <div class="invico4">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-2@2x.png" />
-          </div>
-          <div class="invico5">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-11@2x.png" />
-          </div>
-          <div class="invico6">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-3@2x.png" />
-          </div>
-          <div class="invico7">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-12@2x.png" />
-          </div>
-          <div class="invico8">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-4@2x.png" />
-          </div>
-          <div class="invico9">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-13@2x.png" />
-          </div>
-          <div class="invico10">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-5@2x.png" />
-          </div>
-          <div class="invico11">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-14@2x.png" />
-          </div>
-          <div class="invico12">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-6@2x.png" />
-          </div>
-          <div class="invico13">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-15@2x.png" />
-          </div>
-          <div class="invico14">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-7@2x.png" />
-          </div>
-          <div class="invico15">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-16@2x.png" />
-          </div>
-          <div class="invico16">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-8@2x.png" />
-          </div>
-          <div class="invico17">
-            <div class="invc"></div>
-            <img class="invb-icon" alt="" src="./public/invb-17@2x.png" />
-          </div>
-        </div>
-        <div class="shopping1" id="shoppingContainer">
-          <img
-            class="cart-button-icon"
-            alt=""
-            src="./public/cart-button@2x.png"
-          />
-        </div>
       </div>
     </div>
 
     <script>
-      var shoppingContainer = document.getElementById("shoppingContainer");
-      if (shoppingContainer) {
-        shoppingContainer.addEventListener("click", function (e) {
-          window.location.href = "./webpage.html";
-        });
-      }
+      
+    // JavaScript function to add item to the cart
+    function addToCart(productName, productPrice) {
+      // Create a new list item for the cart
+      var cartItem = document.createElement("li");
+      cartItem.textContent = productName + " - $" + productPrice.toFixed(2);
+
+      // Create a "Remove" button for the cart item
+      var removeButton = document.createElement("span");
+      removeButton.textContent = " Remove";
+      removeButton.className = "remove-item";
+      removeButton.onclick = function () {
+        removeFromCart(cartItem, productPrice);
+      };
+
+      // Append the "Remove" button to the cart item
+      cartItem.appendChild(removeButton);
+
+      // Append the item to the cart
+      document.getElementById("cartItems").appendChild(cartItem);
+
+      // Update the total price
+      updateTotalPrice(productPrice);
+    }
+
+    // JavaScript function to remove item from the cart
+    function removeFromCart(cartItem, productPrice) {
+      // Remove the cart item from the cart
+      cartItem.parentNode.removeChild(cartItem);
+
+      // Update the total price by subtracting the removed item's price
+      updateTotalPrice(-productPrice);
+    }
+
+    // JavaScript function to update the total price
+    function updateTotalPrice(amount) {
+      var totalPriceElement = document.getElementById("totalPrice");
+      var currentTotal = parseFloat(totalPriceElement.textContent);
+      var newTotal = currentTotal + amount;
+      totalPriceElement.textContent = newTotal.toFixed(2);
+    }
+    
     </script>
   </body>
 </html>
+
